@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace preparandoAmbiente
 {
+
     public class WeatherForecast
     {
         public DateTime Date { get; set; }
@@ -15,12 +16,5 @@ namespace preparandoAmbiente
 
         public string Summary { get; set; }
 
-
-
-        [HttpGet("HotReloadTest")]
-        public IEnumerable<string> GetTesteHotReload()
-        {
-            return new string[] { "Hot Reload 2", "Visual Studio 2019", ".NET 5" };
-        }
     }
 }

@@ -36,5 +36,11 @@ namespace preparandoAmbiente.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("HotReloadTest")]
+        public IEnumerable<string> GetTesteHotReload()
+        {
+            return new string[] { "Hot Reload 2", "Visual Studio 2019", ".NET 5" };
+        }
     }
 }
